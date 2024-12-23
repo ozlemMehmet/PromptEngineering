@@ -1,7 +1,12 @@
 package org.Plucky;
 
+import static org.Plucky.callapi.CallApi.getApiMessage;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World! yeto");
+        String apiMessage = getApiMessage();
+        System.out.println(apiMessage);
     }
+
+
 }
