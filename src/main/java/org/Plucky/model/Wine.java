@@ -4,11 +4,11 @@ public class Wine {
     private String winery;
     private String wine;
     private String rating;
-    private int reviews;
+    private String reviews;
     private String location;
     private String image;
 
-    public Wine(String winery, String wine, String rating, int reviews, String location, String image) {
+    public Wine(String winery, String wine, String rating, String reviews, String location, String image) {
         this.winery = winery;
         this.wine = wine;
         this.rating = rating;
@@ -27,8 +27,8 @@ public class Wine {
     public String getRating() { return rating; }
     public void setRating(String rating) { this.rating = rating; }
     
-    public int getReviews() { return reviews; }
-    public void setReviews(int reviews) { this.reviews = reviews; }
+    public String getReviews() { return reviews; }
+    public void setReviews(String reviews) { this.reviews = reviews; }
     
     public String getLocation() { return location; }
     public void setLocation(String location) { this.location = location; }

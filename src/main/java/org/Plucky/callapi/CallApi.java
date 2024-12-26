@@ -54,12 +54,13 @@ public class CallApi {
                 JSONArray jsonArray = new JSONArray(response.toString());
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject wineJson = jsonArray.getJSONObject(i);
+                    JSONObject rating = wineJson.getJSONObject("rating");
                     try {
                         Wine wine = new Wine(
                             wineJson.getString("winery"),
                             wineJson.getString("wine"),
-                            wineJson.getString("rating"),
-                            wineJson.getInt("reviews"),
+                            rating.getString("average"),
+                            rating.getString("reviews"),
                             wineJson.getString("location"),
                             wineJson.getString("image")
                         );

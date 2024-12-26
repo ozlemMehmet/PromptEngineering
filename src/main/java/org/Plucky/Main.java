@@ -17,15 +17,8 @@ public class Main {
         }
         
         System.out.println("\nFound " + wines.size() + " wines:");
-        wines.stream()
-            .limit(5)  // Show only first 5 wines
-            .forEach(wine -> System.out.println(
-                String.format("%s - %s (Rating: %.1f, Reviews: %d)",
-                    wine.getWinery(),
-                    wine.getWine(),
-                    wine.getRating(),
-                    wine.getReviews()
-                )
-            ));
+        for (Wine wine : wines) {
+            System.out.println(wine);
+        }
     }
 }
