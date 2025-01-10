@@ -20,5 +20,8 @@ public class Main {
         for (Wine wine : wines) {
             System.out.println(wine);
         }
+
+        MathRounded mathRounded = new MathRounded();
+        mathRounded.readAandB();
     }
 }
