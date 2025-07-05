@@ -12,4 +12,4 @@ COPY src /app/src
 RUN mvn clean install
 
 # Set the entry point to run the application
-ENTRYPOINT ["java", "-cp", "target/PromptEngineering-1.0-SNAPSHOT.jar", "org.Plucky.Main"]
+ENTRYPOINT ["java", "-cp", "target/PromptEngineering-1.0-SNAPSHOT.jar", "org.Plucky.callapi.TeslaModelYBot"]
